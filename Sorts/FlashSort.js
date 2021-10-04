@@ -6,6 +6,12 @@
  * Wikipedia: https://en.wikipedia.org/wiki/Flashsort
  */
 
+/**
+ * flashSort takes an array of numbers and returns the array sorted in increasing order.
+ *
+ * @param {number[]} arr The array of numbers to be sorted.
+ * @return {number[]} The array of numbers sorted in increasing order.
+ */
 function flashSort (arr) {
   let max = 0; let min = arr[0]
   const n = arr.length
