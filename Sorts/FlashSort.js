@@ -9,11 +9,13 @@
 
 
 function flashSort (arr) {
-  let max = 0; let min = arr[0]
+  let max = 0 // Index of the maximum value.
+  let min = arr[0]
   const n = arr.length
   const m = ~~(0.45 * n)
   const l = new Array(m)
 
+  // Go through array to identify the minimum value and the index of the maximum value.
   for (let i = 1; i < n; ++i) {
     if (arr[i] < min) {
       min = arr[i]
@@ -23,6 +25,8 @@ function flashSort (arr) {
     }
   }
 
+  // If the minimum value is the same as the maximum value,
+  // That means we have a list of length 1 or a list containing only the same number, so it is already sorted and we return that.
   if (min === arr[max]) {
     return arr
   }
