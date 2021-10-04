@@ -94,3 +94,5 @@ console.log(array)
 console.log('- After Sort | Implementation of Flash Sort -')
 console.log(flashSort(array))
 console.log('\n')
+
+export { flashSort }
