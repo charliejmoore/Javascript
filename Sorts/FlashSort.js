@@ -2,16 +2,12 @@
  * Flashsort is a distribution sorting algorithm showing linear
  * computational complexity O(n) for uniformly distributed
  * data sets and relatively little additional memory requirement.
+ * Flashsort uses an in-place implementation of histogram sort, itself a type of bucket sort.
  *
  * Wikipedia: https://en.wikipedia.org/wiki/Flashsort
  */
 
-/**
- * flashSort takes an array of numbers and returns the array sorted in increasing order.
- *
- * @param {number[]} arr The array of numbers to be sorted.
- * @return {number[]} The array of numbers sorted in increasing order.
- */
+
 function flashSort (arr) {
   let max = 0; let min = arr[0]
   const n = arr.length
